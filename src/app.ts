@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 const PORT = process.env.PORT;
 
-const app = express();
+export const app = express();
 
 
 interface Repo {
@@ -45,7 +45,7 @@ app.get('/repos/:user', async (req: Request, res: Response) => {
         res.json(reposResponse);
         return
     } catch (error: any) {
-        console.error(error);
+        //console.error(error);
         res.status(500).json({
             error: 'Internal server error',
             message: error.message
