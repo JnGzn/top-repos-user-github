@@ -19,7 +19,7 @@ $ npm start
 
 ## Variables de entorno
 Si desea cambiar el puerto donde se va a ejecutar la apliacion abra el archivo
-``` .nev ```
+``` .env ```
 y cambie el valor de PORT
 
 ## EndPoints
